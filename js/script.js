@@ -23,6 +23,7 @@ console.log(aventura12);
 */
 
 // 2 - crear las variables/arrays necesarios
+const imageBaseUrl = "https://image.tmdb.org/t/p/w200";
 let accion = [];   
 let thriller = [];
 let aventura = []; 
@@ -47,3 +48,37 @@ console.log(aventura);
 */
 
 // 4 - Introducir cada array en la seccion corrspondiente
+
+accion.forEach((pelicula) => {
+    const nuevoDivAccion = document.createElement('div');
+    accion28.appendChild(nuevoDivAccion);
+
+    // Crear la imagen
+    const img = document.createElement('img');
+    img.src = imageBaseUrl + pelicula.poster_path;
+
+    // Añadir la imagen al nuevo div
+    nuevoDivAccion.appendChild(img);
+});
+
+thriller.forEach((pelicula) => {
+const nuevoDivThriller = document.createElement('div');
+thriller53.appendChild(nuevoDivThriller);
+
+const img2 = document.createElement('img');
+    img2.src = imageBaseUrl + pelicula.poster_path;
+
+    // Añadir la imagen al nuevo div
+    nuevoDivThriller.appendChild(img2);
+});
+
+aventura.forEach((pelicula) => {
+const nuevoDivAvent = document.createElement('div');
+aventura12.appendChild(nuevoDivAvent);
+
+const img3 = document.createElement('img');
+    img3.src = imageBaseUrl + pelicula.poster_path;
+
+    // Añadir la imagen al nuevo div
+    nuevoDivAvent.appendChild(img3);
+});
